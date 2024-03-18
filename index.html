@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script type="text/javascript" src="https://qtickets.ru/js/openapi"></script>
+  <link href="https://fonts.googleapis.com/css?family=Montserrat+Alternates:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Организованные беспорядки</title>
+</head>
+<!-- 009589 -->
+<body style="--c-1: #0f1221; --c-2: #20123c; --c-3: #5D3587; --c-4: #A367B1; --c-5: #FFD1E3;">
+  <section class="hero">
+    <div class="hero__trees">
+      <div class="hero__tree" id="hero-tree-left">
+        <div class="hero__tree-main"></div>
+        <div class="hero__tree-color"></div>
+      </div>
+      <div class="hero__tree" id="hero-tree-right">
+        <div class="hero__tree-main"></div>
+        <div class="hero__tree-color"></div>
+      </div>
+      <div class="hero__title title-a"></div>
+      <div class="hero__title title-b"></div>
+    </div>
+    <video src="vid/orgbesy2023.webm" class="hero__vid" loop autoplay muted pip="false"></video>
+  </section>
+
+  <section class="main-buttons">
+    <div class="main-buttons__container wrapper">
+      <button class="main-button active" c-1="#0f1221" c-2="#20123c" c-3="#5D3587" c-4="#A367B1" c-5="#FFD1E3">
+        <div class="main-button__number">4</div>
+        <div class="main-button__title">сцена</div>
+      </button>
+      <button class="main-button" c-1="#160a14" c-2="#22092C" c-3="#872341" c-4="#BE3144" c-5="#F05941">
+        <div class="main-button__number">20</div>
+        <div class="main-button__title">сцена</div>
+      </button>
+      <button class="main-button" c-1="#050f1f" c-2="#0E2954" c-3="#1F6E8C" c-4="#2E8A99" c-5="#1fa4b9">
+        <div class="main-button__title">sound room</div>
+      </button>
+      <button class="main-button" c-1="#0d071a" c-2="#2B2A4C" c-3="#B31312" c-4="#EA906C" c-5="#EEE2DE">
+        <div class="main-button__title">video room</div>
+      </button>
+      <button class="main-button" c-1="#000000" c-2="#2c2c2c" c-3="#838383" c-4="#8d8d8d" c-5="#fff">
+        <div class="main-button__title">tatoo zone</div>
+      </button>
+      <button class="main-button" c-1="#14181a" c-2="#2C3639" c-3="#3F4E4F" c-4="#A27B5C" c-5="#DCD7C9">
+        <div class="main-button__title">чайная</div>
+      </button>
+      <button class="main-button" c-1="#000000" c-2="#2c2c2c" c-3="#3D0000" c-4="#950101" c-5="#FF0000">
+        <div class="main-button__title">кибер-костёр</div>
+      </button>
+    </div>
+  </section>
+
+  <section class="main">
+    <div class="main-slide active">
+      <div class="wrapper">
+        <div class="main-slide__content">
+          <h2 class="main-slide__title">4 сцена</h2>
+          <p class="main-slide__subtitle">лес, танцы</p>
+          <ol class="setlist">
+            <li class="setlist__event">
+              <div class="setlist__event-start-time">18:18</div>
+              <div class="setlist__event-name">on</div>
+              <div class="setlist__event-bg"></div>
+            </li>
+            <div class="setlist__event-more">
+              <div class="setlist__event-more-prev">
+                <div class="on-main main-slide__side-prev-img"></div>
+                <div class="on-color-a main-slide__side-prev-img-color-a"></div>
+                <div class="on-color-b main-slide__side-prev-img-color-b"></div>
+              </div>
+              <p>Начало мероприятия</p>
+            </div>
+            <li class="setlist__event">
+              <div class="setlist__event-start-time">19:19</div>
+              <div class="setlist__event-name">jammm</div>
+              <div class="setlist__event-bg"></div>
+            </li>
+            <div class="setlist__event-more">
+              <div class="setlist__event-more-prev">
+                <div class="jam-main main-slide__side-prev-img"></div>
+                <div class="jam-color-a main-slide__side-prev-img-color-a"></div>
+                <div class="jam-color-b main-slide__side-prev-img-color-b"></div>
+                <div class="jam-bg"></div>
+              </div>
+              <p>Джем-тусовка</p>
+            </div>
+            <li class="setlist__event">
+              <div class="setlist__event-start-time">21:21</div>
+              <div class="setlist__event-name">аууу</div>
+              <div class="setlist__event-bg"></div>
+            </li>
+            <div class="setlist__event-more">
+              <div class="setlist__event-more-prev"><img src="img/events/ayyy.jpg" alt=""></div>
+              <p>Ауу</p>
+            </div>
+            <li class="setlist__event">
+              <div class="setlist__event-start-time">23:11</div>
+              <div class="setlist__event-name">где-то там</div>
+              <div class="setlist__event-bg"></div>
+            </li>
+            <div class="setlist__event-more">
+              <div class="setlist__event-more-prev"><img src="img/events/somewhere.jpg" alt=""></div>
+              <p>где-то там</p>
+            </div>
+            <li class="setlist__event">
+              <div class="setlist__event-start-time">00:22</div>
+              <div class="setlist__event-name">wozhd</div>
+              <div class="setlist__event-bg"></div>
+            </li>
+            <div class="setlist__event-more">
+              <div class="setlist__event-more-prev"><img src="img/events/wozhd.jpg" alt=""></div>
+              <p>wozhd</p>
+            </div>
+            <li class="setlist__event">
+              <div class="setlist__event-start-time">02:22</div>
+              <div class="setlist__event-name">kairos</div>
+              <div class="setlist__event-bg"></div>
+            </li>
+            <div class="setlist__event-more">
+              <div class="setlist__event-more-prev"><img src="img/events/kairos.jpg" alt=""></div>
+              <p>kairos</p>
+            </div>
+            <li class="setlist__event">
+              <div class="setlist__event-start-time">05:30</div>
+              <div class="setlist__event-name">off</div>
+              <div class="setlist__event-bg"></div>
+            </li>
+          </ol>
+          <p class="main-slide__description">На этой сцене ты сможешь погреться у костра тёплой весенней лесной музыки<br><br>Приходи вызывать духов добра вместе с нами</p>
+          <ul class="main-slide__adds">
+            <li class="main-slide__add"><div class="main-slide__add-icon bar-icon"></div><span class="main-slide__add-name">бар</span></li>
+            <li class="main-slide__add"><div class="main-slide__add-icon kitchen-icon"></div><span class="main-slide__add-name">кухня</span></li>
+          </ul>
+        </div>
+        <div class="main-slide__side">
+          <div class="main-slide__side-prev swiper">
+            <div class="swiper-wrapper">
+              <div class="main-slide__side-prev-slide swiper-slide">
+                <div class="on-main main-slide__side-prev-img"></div>
+                <div class="on-color-a main-slide__side-prev-img-color-a"></div>
+                <div class="on-color-b main-slide__side-prev-img-color-b"></div>
+              </div>
+              <div class="main-slide__side-prev-slide swiper-slide">
+                <div class="jam-main main-slide__side-prev-img"></div>
+                <div class="jam-color-a main-slide__side-prev-img-color-a"></div>
+                <div class="jam-color-b main-slide__side-prev-img-color-b"></div>
+                <div class="jam-bg"></div>
+              </div>
+              <div class="main-slide__side-prev-slide swiper-slide"><img src="img/events/ayyy.jpg" alt="" class="main-slide__side-prev-img"></div>
+              <div class="main-slide__side-prev-slide swiper-slide"><img src="img/events/somewhere.jpg" alt="" class="main-slide__side-prev-img"></div>
+              <div class="main-slide__side-prev-slide swiper-slide"><img src="img/events/wozhd.jpg" alt="" class="main-slide__side-prev-img"></div>
+              <div class="main-slide__side-prev-slide swiper-slide"><img src="" alt="" class="main-slide__side-prev-img"></div>
+              <div class="main-slide__side-prev-slide swiper-slide"><img src="" alt="" class="main-slide__side-prev-img"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="main-slide">
+      <div class="wrapper">
+        <div class="main-slide__content">
+          <h2 class="main-slide__title">20 сцена</h2>
+          <p class="main-slide__subtitle">погреб вайбов</p>
+          <ol class="setlist">
+            <li class="setlist__event">
+              <div class="setlist__event-start-time">22:22</div>
+              <div class="setlist__event-name">on</div>
+              <div class="setlist__event-bg"></div>
+            </li>
+            <div class="setlist__event-more">
+              <div class="setlist__event-more-prev">
+                <div class="on-main main-slide__side-prev-img"></div>
+                <div class="on-color-a main-slide__side-prev-img-color-a"></div>
+                <div class="on-color-b main-slide__side-prev-img-color-b"></div>
+              </div>
+              <p>Начало мероприятия</p>
+            </div>
+            <li class="setlist__event">
+              <div class="setlist__event-start-time">22:44</div>
+              <div class="setlist__event-name">kirill trepakov</div>
+              <div class="setlist__event-bg"></div>
+            </li>
+            <div class="setlist__event-more">
+              <div class="setlist__event-more-prev"><img src="img/events/kirill-trepakov.jpg" alt=""></div>
+              <p>kirill trepakov</p>
+            </div>
+            <li class="setlist__event">
+              <div class="setlist__event-start-time">23:55</div>
+              <div class="setlist__event-name">lo-fi people</div>
+              <div class="setlist__event-bg"></div>
+            </li>
+            <div class="setlist__event-more">
+              <div class="setlist__event-more-prev"><img src="img/events/lo-fi-people.jpg" alt=""></div>
+              <p>lo-fi people</p>
+            </div>
+            <li class="setlist__event">
+              <div class="setlist__event-start-time">01:33</div>
+              <div class="setlist__event-name">HARON BARON</div>
+              <div class="setlist__event-bg"></div>
+            </li>
+            <div class="setlist__event-more">
+              <div class="setlist__event-more-prev"><img src="img/events/haron-baron.jpg" alt=""></div>
+              <p>HARON BARON</p>
+            </div>
+            <li class="setlist__event">
+              <div class="setlist__event-start-time">03:13</div>
+              <div class="setlist__event-name">møgwai</div>
+              <div class="setlist__event-bg"></div>
+            </li>
+            <div class="setlist__event-more">
+              <div class="setlist__event-more-prev"><img src="img/events/mogwai.jpg" alt=""></div>
+              <p>møgwai</p>
+            </div>
+            <li class="setlist__event">
+              <div class="setlist__event-start-time">04:04</div>
+              <div class="setlist__event-name">cloudflask</div>
+              <div class="setlist__event-bg"></div>
+            </li>
+            <div class="setlist__event-more">
+              <div class="setlist__event-more-prev"><img src="img/events/cloudflask.jpg" alt=""></div>
+              <p>cloudflask</p>
+            </div>
+            <li class="setlist__event">
+              <div class="setlist__event-start-time">05:22</div>
+              <div class="setlist__event-name">off</div>
+              <div class="setlist__event-bg"></div>
+            </li>
+          </ol>
+          <p class="main-slide__description">Выплесни в бешеных танцах всю свою энергию<br><br>От завораживающего эмбиента до агрессивного techno и кислого acid trance</p>
+          <ul class="main-slide__adds">
+            <li class="main-slide__add"><div class="main-slide__add-icon bar-icon"></div><span class="main-slide__add-name">бар</span></li>
+            <li class="main-slide__add"><div class="main-slide__add-icon kitchen-icon"></div><span class="main-slide__add-name">кухня</span></li>
+          </ul>
+        </div>
+        <div class="main-slide__side">
+          <div class="main-slide__side-prev swiper">
+            <div class="swiper-wrapper">
+              <div class="main-slide__side-prev-slide swiper-slide">
+                <div class="on-main main-slide__side-prev-img"></div>
+                <div class="on-color-a main-slide__side-prev-img-color-a"></div>
+                <div class="on-color-b main-slide__side-prev-img-color-b"></div>
+              </div>
+              <div class="main-slide__side-prev-slide swiper-slide"><img src="img/events/kirill-trepakov.jpg" alt="" class="main-slide__side-prev-img"></div>
+              <div class="main-slide__side-prev-slide swiper-slide"><img src="img/events/lo-fi-people.jpg" alt="" class="main-slide__side-prev-img"></div>
+              <div class="main-slide__side-prev-slide swiper-slide"><img src="img/events/haron-baron.jpg" alt="" class="main-slide__side-prev-img"></div>
+              <div class="main-slide__side-prev-slide swiper-slide"><img src="" alt="" class="main-slide__side-prev-img"></div>
+              <div class="main-slide__side-prev-slide swiper-slide"><img src="" alt="" class="main-slide__side-prev-img"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="main-slide">
+      <div class="wrapper">
+        <div class="main-slide__content">
+          <h2 class="main-slide__title">sound room</h2>
+          <p class="main-slide__subtitle">расслабление, эмбиент, джем</p>
+          <ol class="setlist">
+            <li class="setlist__event">
+              <div class="setlist__event-start-time">18:18</div>
+              <div class="setlist__event-name">ambient sound performance  I</div>
+              <div class="setlist__event-bg"></div>
+            </li>
+            <div class="setlist__event-more">
+              <p>ambient sound performance  I</p>
+            </div>
+            <li class="setlist__event">
+              <div class="setlist__event-start-time">00:12</div>
+              <div class="setlist__event-name">hotwind</div>
+              <div class="setlist__event-bg"></div>
+            </li>
+            <div class="setlist__event-more">
+              <div class="setlist__event-more-prev"><img src="img/events/hotwind.jpg" alt=""></div>
+              <p>hotwind</p>
+            </div>
+            <li class="setlist__event">
+              <div class="setlist__event-start-time">00:44</div>
+              <div class="setlist__event-name">chilly palmer</div>
+              <div class="setlist__event-bg"></div>
+            </li>
+            <div class="setlist__event-more">
+              <div class="setlist__event-more-prev"><img src="img/events/chilly-palmer.jpg" alt=""></div>
+              <p>chilly palmer</p>
+            </div>
+            <li class="setlist__event">
+              <div class="setlist__event-start-time">02:11</div>
+              <div class="setlist__event-name">ambient sound performance  II</div>
+              <div class="setlist__event-bg"></div>
+            </li>
+            <div class="setlist__event-more">
+              <p>ambient sound performance  II</p>
+            </div>
+            <li class="setlist__event">
+              <div class="setlist__event-start-time">04:20</div>
+              <div class="setlist__event-name">sound therapy performance</div>
+              <div class="setlist__event-bg"></div>
+            </li>
+            <div class="setlist__event-more">
+              <p>sound therapy performance</p>
+            </div>
+          </ol>
+          <p class="main-slide__description">Поучаствуй в аудио перфомансах и джеме<br><br>Послушай завораживающих музыкантов в камерной атмосфере и окунись в конце в звуковую терапию</p>
+        </div>
+        <div class="main-slide__side"></div>
+      </div>
+    </div>
+    <div class="main-slide">
+      <div class="wrapper">
+        <div class="main-slide__content">
+          <h2 class="main-slide__title">video room</h2>
+          <p class="main-slide__subtitle">организованное TV</p>
+          <ol class="setlist">
+            <li class="setlist__event">
+              <div class="setlist__event-start-time">18:18</div>
+              <div class="setlist__event-name">“Большой Лебовски”</div>
+              <div class="setlist__event-bg"></div>
+            </li>
+            <div class="setlist__event-more">
+              <div class="setlist__event-more-prev"><img src="img/movies/lebovsky.jpg" alt=""></div>
+              <p>“Большой Лебовски”</p>
+            </div>
+            <li class="setlist__event">
+              <div class="setlist__event-start-time">20:20</div>
+              <div class="setlist__event-name">“Укуренные”</div>
+              <div class="setlist__event-bg"></div>
+            </li>
+            <div class="setlist__event-more">
+              <div class="setlist__event-more-prev"><img src="img/movies/smoked.jpg" alt=""></div>
+              <p>“Укуренные”</p>
+            </div>
+            <li class="setlist__event">
+              <div class="setlist__event-start-time">23:10</div>
+              <div class="setlist__event-name">“Полуночные откровения I”</div>
+              <div class="setlist__event-bg"></div>
+            </li>
+            <div class="setlist__event-more">
+              <div class="setlist__event-more-prev"><img src="img/movies/midnight-gospel.jpg" alt=""></div>
+              <p>“Полуночные откровения I”</p>
+            </div>
+            <li class="setlist__event">
+              <div class="setlist__event-start-time">23:33</div>
+              <div class="setlist__event-name">“Полуночные откровения II”</div>
+              <div class="setlist__event-bg"></div>
+            </li>
+            <div class="setlist__event-more">
+              <div class="setlist__event-more-prev"><img src="img/movies/midnight-gospel.jpg" alt=""></div>
+              <p>“Полуночные откровения II”</p>
+            </div>
+            <li class="setlist__event">
+              <div class="setlist__event-start-time">00:04</div>
+              <div class="setlist__event-name">“Полуночные откровения III”</div>
+              <div class="setlist__event-bg"></div>
+            </li>
+            <div class="setlist__event-more">
+              <div class="setlist__event-more-prev"><img src="img/movies/midnight-gospel.jpg" alt=""></div>
+              <p>“Полуночные откровения III”</p>
+            </div>
+            <li class="setlist__event">
+              <div class="setlist__event-start-time">00:33</div>
+              <div class="setlist__event-name">“Полуночные откровения IV”</div>
+              <div class="setlist__event-bg"></div>
+            </li>
+            <div class="setlist__event-more">
+              <div class="setlist__event-more-prev"><img src="img/movies/midnight-gospel.jpg" alt=""></div>
+              <p>“Полуночные откровения IV”</p>
+            </div>
+            <li class="setlist__event">
+              <div class="setlist__event-start-time">01:11</div>
+              <div class="setlist__event-name">“Страх и ненависть в Лас-Вегасе”</div>
+              <div class="setlist__event-bg"></div>
+            </li>
+            <div class="setlist__event-more">
+              <div class="setlist__event-more-prev"><img src="img/movies/vegas.jpeg" alt=""></div>
+              <p>“Страх и ненависть в Лас-Вегасе”</p>
+            </div>
+            <li class="setlist__event">
+              <div class="setlist__event-start-time">03:22</div>
+              <div class="setlist__event-name">“Полуночные откровения V”</div>
+              <div class="setlist__event-bg"></div>
+            </li>
+            <div class="setlist__event-more">
+              <div class="setlist__event-more-prev"><img src="img/movies/midnight-gospel.jpg" alt=""></div>
+              <p>“Полуночные откровения V”</p>
+            </div>
+            <li class="setlist__event">
+              <div class="setlist__event-start-time">03:48</div>
+              <div class="setlist__event-name">“Полуночные откровения VI”</div>
+              <div class="setlist__event-bg"></div>
+            </li>
+            <div class="setlist__event-more">
+              <div class="setlist__event-more-prev"><img src="img/movies/midnight-gospel.jpg" alt=""></div>
+              <p>“Полуночные откровения VI”</p>
+            </div>
+            <li class="setlist__event">
+              <div class="setlist__event-start-time">04:20</div>
+              <div class="setlist__event-name">“Гарри Повар и тайная комната”</div>
+              <div class="setlist__event-bg"></div>
+            </li>
+            <div class="setlist__event-more">
+              <div class="setlist__event-more-prev"><img src="img/movies/harry-povar.png" alt=""></div>
+              <p>“Гарри Повар и тайная комната”</p>
+            </div>
+            <li class="setlist__event">
+              <div class="setlist__event-start-time">04:33</div>
+              <div class="setlist__event-name">“Полуночные откровения VII”</div>
+              <div class="setlist__event-bg"></div>
+            </li>
+            <div class="setlist__event-more">
+              <div class="setlist__event-more-prev"><img src="img/movies/midnight-gospel.jpg" alt=""></div>
+              <p>“Полуночные откровения VII”</p>
+            </div>
+            <li class="setlist__event">
+              <div class="setlist__event-start-time">04:55</div>
+              <div class="setlist__event-name">“Полуночные откровения VIII”</div>
+              <div class="setlist__event-bg"></div>
+            </li>
+            <div class="setlist__event-more">
+              <div class="setlist__event-more-prev"><img src="img/movies/midnight-gospel.jpg" alt=""></div>
+              <p>“Полуночные откровения VIII”</p>
+            </div>
+          </ol>
+          <p class="main-slide__description">Поучаствуй в аудио перфомансах и джеме<br><br>Послушай завораживающих музыкантов в камерной атмосфере и окунись в конце в звуковую терапию</p>
+        </div>
+        <div class="main-slide__side"></div>
+      </div>
+    </div>
+    <div class="main-slide">
+      <div class="wrapper">
+        <div class="tatoo main-slide__content">
+          <h2 class="main-slide__title">tatoo zone</h2>
+          <p class="main-slide__subtitle">Раскрась своё тело цветами весны</p>
+          <div class="tatoo-masters">
+            <div class="person">
+              <img src="img/tatoo-bg-1.png" class="person__header">
+              <a href="#" class="person__logo"><img src="img/tatoo-master-1.png" alt="Илья"></a>
+              <h3 class="person__name">Илья</h3>
+              <p class="person__description">Тату-мастер</p>
+              <div class="person__gallery"><img src="img/tatoo-1-1.jpg"><img src="img/tatoo-1-2.jpg"><img src="img/tatoo-1-3.jpg"></div>
+            </div>
+            <div class="person">
+              <img src="img/tatoo-bg-2.png" class="person__header">
+              <a href="#" class="person__logo"><img src="img/tatoo-master-2.png" alt="Карина"></a>
+              <h3 class="person__name">Карина</h3>
+              <p class="person__description">Тату-мастер</p>
+              <div class="person__gallery"><img src="img/tatoo-2-1.jpg"><img src="img/tatoo-2-2.jpg"><img src="img/tatoo-2-3.jpg"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="main-slide">
+      <div class="wrapper">
+        <div class="main-slide__content">
+          <h2 class="main-slide__title">чайная</h2>
+          <p class="main-slide__subtitle">Горячие напитки для тела, диалоги для души</p>
+        </div>
+      </div>
+    </div>
+    <div class="main-slide">
+      <div class="wrapper">
+        <div class="main-slide__content">
+          <h2 class="main-slide__title">Кибер - костёр</h2>
+          <p class="main-slide__subtitle">Инсталляция от “Kami Usu”</p>
+          <span id="unknown">???</span>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <section class="location wrapper">
+    <div class="tickets">
+      <h2 class="section__title">Билеты</h2>
+      <div class="ticket">
+        <h3 class="ticket__title"><span class="ticket__title-name">Билет 4/20</span><span class="ticket__title-price">420р</span></h3>
+        <p class="ticket__description">Посещение интересной выставки, наслаждение прекрасной музыкой и общение с интересными людьми</p>
+      </div>
+      <button rel="qtickets" class="qtickets-button" data-event-id="104766">купить билет</button>
+    </div>
+    <div class="location__container">
+      <div class="location__map">
+        <div class="location__map-main"></div>
+        <div class="location__map-color"></div>
+        <div class="location__map-title">Kinky Rouge</div>
+        <a href="https://yandex.ru/maps/-/CDFPYD9d" class="location__map-link"></a>
+      </div>
+      <a href="https://yandex.ru/maps/-/CDFPYD9d" class="location__address">ул. Малая Якиманка 24, "Kinky Rouge"</a>
+    </div>
+  </section>
+
+  <section class="contacts">
+    <div class="wrapper">
+      <h2 class="section__title"></h2>
+    </div>
+  </section>
+  
+
+  
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="js/main.js" defer></script>
+</body>
+</html>
