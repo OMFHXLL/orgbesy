@@ -23,7 +23,7 @@
     window.onload = function() {
         let preloader = document.getElementById('preloader');
         preloader.classList.add('hide-preloader');
-        document.body.style.opacity = '1';
+        document.body.style.opacity = 1;
         setInterval(function() {
               preloader.classList.add('preloader-hidden');
         }, 990);
@@ -36,7 +36,7 @@
       top: 0;
       left: 0;
       width: 100%;
-      height: 100dvh;
+      height: 100vh;
       display: flex;
       align-items: center;
       justify-content: center;
@@ -69,7 +69,7 @@
   </style>
 </head>
 <!-- 009589 -->
-<body style="--c-1: #0f1221; --c-2: #20123c; --c-3: #5D3587; --c-4: #A367B1; --c-5: #FFD1E3;">
+<body style="--c-1: #0f1221; --c-2: #20123c; --c-3: #5D3587; --c-4: #A367B1; --c-5: #FFD1E3;" style="opacity: 0;">
   <div id='preloader'>
     <img src="img/leaf-logo.png" alt="preloader" style="widows: 7rem; height: 7rem; animation: preloaderAnimation 3s ease-in-out infinite alternate;">
   </div>
