@@ -23,6 +23,7 @@
     window.onload = function() {
         let preloader = document.getElementById('preloader');
         preloader.classList.add('hide-preloader');
+        document.body.style.opacity = '1';
         setInterval(function() {
               preloader.classList.add('preloader-hidden');
         }, 990);
@@ -42,7 +43,7 @@
       background: #ffffff;
     }
     #preloader.hide-preloader {
-        animation: hidePreloader 1s;
+        animation: hidePreloader 1s linear forwards;
     }
 
     #preloader.preloader-hidden {
