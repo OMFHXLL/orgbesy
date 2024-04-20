@@ -34,11 +34,7 @@
 } */
 @font-face {
   font-family: 'Desyatiy';
-  src: url(/fonts/Desyatiy-Bold.ttf);
-}
-@font-face {
-  font-family: 'pinzelan';
-  src: url(/fonts/pinzelan.woff2);
+  src: url(../fonts/Desyatiy-Bold.ttf);
 }
 
 html {
