@@ -19,9 +19,59 @@
     }
   }
   </script>
+  <script>
+    window.onload = function() {
+        let preloader = document.getElementById('preloader');
+        preloader.classList.add('hide-preloader');
+        setInterval(function() {
+              preloader.classList.add('preloader-hidden');
+        }, 990);
+    }
+  </script>
+  <style>
+    #preloader {
+      position: fixed;
+      z-index: 100;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100dvh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: #ffffff;
+    }
+    #preloader.hide-preloader {
+        animation: hidePreloader 1s;
+    }
+
+    #preloader.preloader-hidden {
+        display: none;
+    }
+
+    @keyframes hidePreloader {
+        0% {
+            opacity: 1;
+        }
+        100% {
+            opacity: 0;
+        }
+    }
+    @keyframes preloaderAnimation {
+      0% {
+        transform: scale(1) rotate(0deg);
+      }
+      100% {
+        transform: scale(1.2) rotate(-8deg);
+      }
+    }
+  </style>
 </head>
 <!-- 009589 -->
 <body style="--c-1: #0f1221; --c-2: #20123c; --c-3: #5D3587; --c-4: #A367B1; --c-5: #FFD1E3;">
+  <div id='preloader'>
+    <img src="img/leaf-logo.png" alt="preloader" style="widows: 10rem; height: 10rem; animation: preloaderAnimation 3s ease-in-out infinite alternate;">
+  </div>
   <section class="hero">
     <div class="hero__marquees">
       <div class="hero__marquee-container left">
@@ -45,7 +95,9 @@
         </div>
       </div>
     </div>
-    <!-- <div class="hero__container"></div> -->
+    <div class="hero__container">
+      <img src="img/leaf-logo.png" alt="preloader" style="widows: 10rem; height: 10rem; animation: preloaderAnimation 3s ease-in-out infinite alternate;">
+    </div>
     <!-- <div class="hero__trees">
       <div class="hero__tree" id="hero-tree-left">
         <div class="hero__tree-main"></div>
